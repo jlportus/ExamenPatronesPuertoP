@@ -2,6 +2,7 @@ import ejercicio1.Habitacion;
 import ejercicio1.UnidadHospitalaria;
 import ejercicio2.Alumno;
 import ejercicio2.AlumnoGC;
+import ejercicio3.Coordinador;
 
 public class App {
 
@@ -42,7 +43,7 @@ public class App {
 	}
 
 	private static void probarEjercicio3() {
-		// TODO Auto-generated method stub
+		
 
 	}
 
