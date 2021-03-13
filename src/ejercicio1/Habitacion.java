@@ -1,10 +1,6 @@
 package ejercicio1;
 
 
-import java.util.Collection;
-
-
-
 public class Habitacion implements Covid19 {
 
 	int numeroHabitacion;
@@ -42,7 +38,7 @@ public class Habitacion implements Covid19 {
 	@Override
 	public int getNumeroInfectados() {
 		int numeroInfectado = 0;
-		if (covidPositivo) {
+		if (isCovidPositivo()) {
 			numeroInfectado = 1;
 		}
 		return numeroInfectado;

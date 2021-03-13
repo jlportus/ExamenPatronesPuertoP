@@ -9,35 +9,39 @@ public class Coordinador {
 	private static Collection<Queja> quejas;
 	private static Coordinador COORDINADOR;
 	
-	
-	
-	private Coordinador() {
+	static {
 		alumnos = new ArrayList<>();
 		quejas = new ArrayList<>();
+		COORDINADOR = new Coordinador();
 	}
 	
-	public synchronized static Coordinador getInstanciaUnica () {
-		if (COORDINADOR==null) {
-			COORDINADOR = new Coordinador();
-			quejas = new ArrayList<>();
+	
+	
+	public Coordinador() {
+		
+	}
+	
+	public static Coordinador getInstanciaUnica () {
+
 			return COORDINADOR;
-		}
-		else return COORDINADOR;
 	}
 	
 	public void apuntarse(Alumno alumno) {
 		alumnos.add(alumno);
 	}
 	
-	public void apuntarse(Queja queja) {
+	public void quejarse(Queja queja) {
 		quejas.add(queja);
 	}
 	
 	public void consultarQuejas(){
-		System.out.println(quejas);
+		System.out.println("Las quejas son: ");
+		quejas.forEach(System.out::println);
+		
 	}
 	
 	public void consultarAlumnos(){
-		System.out.println(alumnos);
+		System.out.println("Los alumnos son: ");
+		alumnos.forEach(System.out::println);
 	}
 }

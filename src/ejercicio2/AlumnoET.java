@@ -20,7 +20,7 @@ public class AlumnoET extends Alumno {
 
 	@Override
 	float calcularNotaParticipacion() {
-
+		
 		float notaParticipancion = (this.numeroParicipaciones * 1.25f);
 		if (notaParticipancion > 10) {
 			notaParticipancion = 10;

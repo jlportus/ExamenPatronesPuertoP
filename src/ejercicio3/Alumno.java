@@ -2,7 +2,6 @@ package ejercicio3;
 
 public class Alumno {
 
-	
 	String Alumno;
 
 	public Alumno(String alumno) {
@@ -12,7 +11,7 @@ public class Alumno {
 
 	@Override
 	public String toString() {
-		return "Alumno [Alumno=" + Alumno + "]";
+		return Alumno;
 	}
-	
+
 }

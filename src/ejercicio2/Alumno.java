@@ -24,7 +24,7 @@ public abstract class Alumno {
 	abstract float calcularNotaRegalos();
 
 	public float calificacion() {
-		return calcularNotaExamen()*0.25f + calcularNotaParticipacion()*0.3f + calcularNotaRegalos()*0.45f;
+		return calcularNotaExamen() * 0.25f + calcularNotaParticipacion() * 0.3f + calcularNotaRegalos() * 0.45f;
 	}
 
 }
